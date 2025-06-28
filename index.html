@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SkillSwap</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="firebase-config.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>SkillSwap</h1>
+
+  <div id="auth">
+    <input id="email" type="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <button onclick="signup()">Sign Up</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div id="skill-form" style="display:none;">
+    <input id="yourSkill" placeholder="Your Skill">
+    <input id="wantSkill" placeholder="Want to Learn">
+    <button onclick="saveSkill()">Save</button>
+  </div>
+
+  <div id="matches"></div>
+</body>
+</html>
